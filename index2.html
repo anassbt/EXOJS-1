@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>SLIDER JS</title>
+        <title>Calculatrice</title>
         <meta name="Slider Js" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,7 +12,7 @@
         <!-- Place favicon.ico in the root directory -->
           <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main2.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -22,53 +22,43 @@
 
         <!-- Add your site or application content here -->
 <header>
-  <h1>SLIDER JAVASCRIPT</h1>
+  <h1>Calculatrice</h1>
 </header>
 
-<main class="container">
-  <div class="row">
-
-    <figure class="col-sm-12">
-      <img class="" src="img/AstonMartinGT.jpg" alt="Aston Martin GT grise">
-      <img class="" src="img/Etype.jpg" alt="Jaguar E-type">
-      <img class="" src="img/Sprint GT Veloce.jpg" alt="Alfa Romeo Sprint GT Veloce">
-    </figure>
-
-<div class="col-sm-6">
-
-  <input class="buttoncontrol" type="button" name="Précédent" value="Précédent">
-
-</div>
-
-<div class="col-sm-6">
-
-  <input class="buttoncontrol" type="button" name="Suivant" value="Suivant">
-
-</div>
-
+<div class="calculator">
+  <div class="input" id="input"></div>
+  <div class="buttons">
+    <div class="operators">
+      <div>+</div>
+      <div>-</div>
+      <div>&times;</div>
+      <div>&divide;</div>
+    </div>
+    <div class="leftPanel">
+      <div class="numbers">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+      <div class="numbers">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+      <div class="numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="numbers">
+        <div>0</div>
+        <div>.</div>
+        <div id="clear">C</div>
+      </div>
+    </div>
+    <div class="equal" id="result">=</div>
   </div>
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
         		<!-- Images Type  -->
         <!-- <img src="http://placehold.it/350x150" alt=""> -->
