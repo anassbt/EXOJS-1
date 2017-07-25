@@ -1,6 +1,6 @@
 // Memory game //
 
-// variables
+
 var choix1 = [];
 var choix2 = [];
 var compare = 0;
@@ -20,7 +20,6 @@ for (var position = images.length - 1; position >= 1; position--) {
 
 }
 
-//for images melanger
 for (var i = 0; i < imageDom.length; i++) {
 
     imageDom[i].className += " " + images[i];
@@ -31,7 +30,7 @@ for (var i = 0; i < images.length; i++) {
 }
 
 function stock(obj) {
-    //obj.
+
     choix1.push(obj.classList[1]);
     choix2.push(obj.id);
     console.log(choix2);
@@ -40,39 +39,41 @@ function stock(obj) {
 
 
 
-// function
+
 function play(obj) {
     if (compare == 0) {
-        //mettre ce qui se passe au premier click
+
         stock(obj);
         console.log(choix1);
-        //style
+
         obj.firstChild.style.opacity = "1";
         console.log(compare);
         compare++;
 
     } else {
-        //ce qui se passe au deuxieme click
+
         stock(obj);
-        //styles
+
+
         obj.firstChild.style.opacity = "1";
         console.log(compare);
-        //compare
+
+
+
         if (choix1[0] == choix1[1]) {
             console.log(choix1);
 
 
-            alert("oui");
+            alert("Good Game! Keep going ...");
 						choix2 = [];
             choix1=[];
         } else {
             console.log(choix1);
             choix1 = [];
-            alert("no");
+            alert("Damn!!! Born to be a Loser? TRY AGAIN !");
             console.log("choix2: " + choix2);
 
             for (var i = 0; i < choix2.length; i++) {
-                // obj.firstChild.style.opacity="0";
                 console.log(document.getElementById(choix2[i]));
 
                 document.getElementById(choix2[i]).firstChild.style.opacity = "0";
@@ -86,13 +87,5 @@ function play(obj) {
 
 
 };
-
-
-// function
-
-
-
-// script
-
 
 // Memory game //
